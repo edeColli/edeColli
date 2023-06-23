@@ -18,6 +18,7 @@ Here are some ideas to get you started:
 ![Delphi](https://img.shields.io/badge/-Delphi-red?logo=delphi)
 ![Pascal](https://img.shields.io/badge/-Pascal-blue?logo=pascal)
 ![Python](https://img.shields.io/badge/-Python-yellow?logo=python)
+![Django](https://img.shields.io/badge/-Django-darkgreen?logo=django&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-purple?logo=bootstrap)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-blue?logo=postgresql)
 ![Oracle](https://img.shields.io/badge/-Oracle-orange?logo=oracle)
