@@ -7,7 +7,7 @@ I'm Ed, I'm a software developer, I work mostly with back-end technologies.
 Here are some ideas to get you started:
 -->
 
-- 🔭 I’m currently working on Linx (www.linx.com.br)
+- 🔭 I’m currently co-founder and working on EColli Tecnologia (www.abcskill.com.br)
 - 🌱 I’m currently learning Python/Django
 - 😄 Pronouns: He/him
 - 🔥 Senior Delphi Developer
