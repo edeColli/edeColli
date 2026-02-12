@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão para alternar tema -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Container principal -->
+    <div class="container">
+        
+        <!-- Cabeçalho -->
+        <header id="inicio" class="header">
+            <div class="header-content">
+                <!-- Foto de perfil -->
+                <div class="profile-photo">
+                    <img src="./MyPicture.png" alt="Foto de perfil" id="profileImage">
+                    <!-- <div class="photo-overlay">Clique para adicionar foto</div> -->
+                </div>
+
+                <!-- Informações principais -->
+                <div class="header-info">
+                    <h1 class="name">Ednesio Colli</h1>
+                    <p class="tagline">Backend Senior Developer | Delphi | Python</p>
+                    
+                    <!-- Links sociais -->
+                    <div class="social-links">
+                        <a href="https://edecolli.github.io/edeColli/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ednesio-colli/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:ednesio.colli@gmail.com" class="social-link" title="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contador de tecnologias -->
+                <div class="tech-counter">
+                    <div class="counter-item">
+                        <span class="counter-number" data-target="17">0</span>
+                        <span class="counter-label">Tecnologias</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu de navegação -->
+        <nav class="menu">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <span class="cta-badge">✨ Novidade</span>
+                    <h2 class="cta-title">Explore Meus Projetos Mais Relevantes</h2>
+                    <p class="cta-description">Soluções backend escaláveis e inovadoras com Delphi e Python</p>
+                    <button class="cta-button" onclick="document.querySelector('#projetos').scrollIntoView({behavior: 'smooth'})">
+                        Ver Projetos
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Layout de 3 colunas -->
+        <div class="main-layout">
+            
+            <!-- Coluna Esquerda - Menu Lateral -->
+            <aside class="sidebar-left">
+                <h3>Menu</h3>
+                <nav class="nav-menu">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#inicio" class="nav-link active">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <!-- <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+</svg>
+
+                                </svg>
+                                Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sobre" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Sobre mim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projetos" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                Projetos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#habilidades" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                Habilidades
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experiencia" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                Experiência
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#formacao" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                Formação
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="nav-link">
+                                <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Indicador de progresso -->
+                <div class="scroll-indicator">
+                    <div class="scroll-progress" id="scrollProgress"></div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                
+                <!-- Seção: Sobre Mim -->
+                <section id="sobre" class="content-section">
+                    <div class="section-header">                        
+                        <h2 class="section-title">Sobre Mim</h2>                        
+                        <div class="section-divider"></div>
+                    </div>                    
+                    <p class="section-text">
+                        Olá! Sou desenvolvedor backend sênior com mais de 20 anos de experiência 
+                        criando soluções escaláveis e eficientes. Especializado em Delphi e Python, 
+                        trabalho com arquitetura de sistemas, APIs RESTful e otimização de performance.
+                    </p>
+                    <p class="section-text">
+                        Apaixonado por resolver problemas complexos e sempre buscando as melhores 
+                        práticas de desenvolvimento. Nos meus projetos pessoais, gosto de explorar 
+                        novas tecnologias e compartilhar conhecimento com a comunidade.
+                    </p>
+                </section>
+
+                <!-- Seção: Projetos -->
+                <section id="projetos" class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Meus Projetos</h2>
+                        <p class="section-subtitle">Uma jornada através dos projetos e das soluções que desenvolvi ou participei em equipes com pessoas fantásticas!</p>
+                    </div>
+
+                    <!-- Timeline de Projetos -->
+                    <div class="timeline">
+                        
+                        <!-- Projeto 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Novembro 2024</span>
+                                <h3 class="project-title">Plataforma de avaliações On-line</h3>
+                                <p class="project-description">
+                                    Plataforma completa desenvolvida basicamente em Python/Django com API RESTful completa de todas as funcionalidades, incluindo autenticação JWT.
+                                    Permite avaliar e identificar alunos com déficit de atenção e/ou altas habilidades, através de métricas e gráficos muito bem estruturados.
+                                </p>
+                                
+                                <a href="https://www.abcskill.com.br" target="_blank" rel="noopener noreferrer" class="social-link" title="ABCSkill">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a><br>
+                                
+                                <!-- Tags de tecnologias -->
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Django</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">I.A.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Fevereiro 2023</span>
+                                <h3 class="project-title">Consulta FIPE</h3>
+                                <p class="project-description">
+                                    Primeiros passos com Python, criando um script para consultar a tabela FIPE e obter os valores de mercado de veículos.
+                                </p>
+                                
+                                <a href="https://github.com/edeColli/FIPE" target="_blank" rel="noopener noreferrer" class="social-link" title="Consulta FIPE">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a><br>
+                                
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Requests</span>
+                                    <span class="tag">JSON</span>
+                                    <span class="tag">API</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Novembro 2021</span>
+                                <h3 class="project-title">Philips Experience</h3>
+                                <p class="project-description">
+                                    Tiver a oportunidade de participar do desenvolvimento do mario software voltado para a área de saúde, com foco em controles operacionais, automação de relatórios e integração com sistemas de terceiros. O projeto envolveu a criação de soluções personalizadas para atender às necessidades específicas dos clientes, utilizando tecnologias como JAVA, JavaScript, Oracle.
+                                </p>
+                                
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Oracle</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Janeiro 2017</span>
+                                <h3 class="project-title">Mini ERP</h3>
+                                <p class="project-description">
+                                    Criei um sistema desenvolvido em Delphi com Postgres, para controle de ordens de serviço de uma autoelétrica. Sistema simples, porém, utilizando principios de SOLID, com arquitetura multicamadas, e integração com APIs de terceiros.
+                                </p>
+
+                                <a href="https://github.com/edeColli/C2" target="_blank" rel="noopener noreferrer" class="social-link" title="Mini ERP">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a><br>    
+                                
+                                <div class="project-tags">
+                                    <span class="tag">Delphi XE</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">RestAPI</span>
+                                    <span class="tag">Integração com Terceiros</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Projeto 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Agosto 2015</span>
+                                <h3 class="project-title">Hotelaria</h3>
+                                <p class="project-description">
+                                    Participação no desenvolvimento de um sistema de gestão hoteleira, com módulos de reservas, check-in/check-out, faturamento e relatórios. O projeto envolveu integração com sistemas de pagamento e otimização de processos operacionais.
+                                    Novas tecnologias aplicadas, como RESTFul APIs, aplicação multicamadas, e integração com serviços de terceiros para melhorar a experiência do usuário e a eficiência do sistema.
+                                </p>
+                                
+                                <div class="project-tags">
+                                    <span class="tag">Delphi XE</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">RestAPI</span>
+                                    <span class="tag">Integração com Terceiros</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 6 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Setembro 2012</span>
+                                <h3 class="project-title">PDV - PAF_ECF</h3>
+                                <p class="project-description">
+                                    Homologação de um sistema de PDV no PAF-ECF, garantindo conformidade com as regulamentações fiscais e operacionais. O projeto envolveu testes rigorosos, identificação de falhas e colaboração com a equipe de desenvolvimento para implementar melhorias.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span class="tag">Delphi</span>
+                                    <span class="tag">SQLite</span>
+                                    <span class="tag">Postgres</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 7 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Agosto 2008</span>
+                                <h3 class="project-title">ERP de Varejo</h3>
+                                <p class="project-description">
+                                    Migração completa de um sistema legado em Dataflex para Delphi, moderniazando a interface e otimizando o desempenho. O projeto envolveu análise de requisitos, design de banco de dados e implementação de novas funcionalidades.
+                                </p>
+                                                            
+                                <div class="project-tags">
+                                    <span class="tag">DataFlex</span>
+                                    <span class="tag">Delphi</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 8 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="project-date">Março 2003</span>
+                                <h3 class="project-title">Início de tudo</h3>
+                                <p class="project-description">
+                                    Primeiro emprego na área de tecnologia, onde tive a oportunidade de aprender e crescer profissionalmente. Foi o ponto de partida para minha jornada como desenvolvedor backend.
+                                    Trabalhei com diversas tecnologias, participei de projetos desafiadores e adquiri uma base sólida que me impulsionou a buscar novas oportunidades e aprimorar minhas habilidades ao longo dos anos.
+                                    ERP voltado para o setor de varejo, com módulos de vendas, estoque, financeiro e relatórios. Desenvolvido em Delphi, com banco de dados Firebird e Postgresql.
+                                </p>
+                                                            
+                                <div class="project-tags">
+                                    <span class="tag">Delphi</span>
+                                    <span class="tag">Kylix</span>
+                                    <span class="tag">Linux</span>
+                                    <span class="tag">Windows</span>
+                                    <span class="tag">Firebird</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Seção: Habilidades -->
+                <section id="habilidades" class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Habilidades</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="skills-grid">
+                        
+                        <!-- Linguagens de Programação -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                <h3>Linguagens de Programação</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Delphi / Object Pascal</span>
+                                        <span class="skill-years">20+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-years">4+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">SQL</span>
+                                        <span class="skill-years">15+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks e Bibliotecas -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="3" x2="9" y2="21"></line>
+                                </svg>
+                                <h3>Frameworks e Bibliotecas</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">FastAPI</span>
+                                        <span class="skill-years">3+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Django</span>
+                                        <span class="skill-years">4+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">FireDAC</span>
+                                        <span class="skill-years">10+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bancos de Dados -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                                <h3>Bancos de Dados</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">PostgreSQL</span>
+                                        <span class="skill-years">15+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">SQL Server</span>
+                                        <span class="skill-years">5+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Oracle</span>
+                                        <span class="skill-years">3+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">MongoDB</span>
+                                        <span class="skill-years">2+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ferramentas e DevOps -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                                <h3>Ferramentas e DevOps</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Git / GitHub</span>
+                                        <span class="skill-years">8+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CI/CD (Jenkins, GitLab CI)</span>
+                                        <span class="skill-years">5+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud/Infraestrutura -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                </svg>
+                                <h3>Cloud/Infraestrutura</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">AWS (EC2, S3, RDS)</span>
+                                        <span class="skill-years">1+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Linux (Ubuntu, CentOS)</span>
+                                        <span class="skill-years">8+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Nginx / WSGI</span>
+                                        <span class="skill-years">2+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Soft Skills -->
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <h3>Soft Skills</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Resolução de Problemas</span>
+                                        <span class="skill-years">8+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Trabalho em Equipe</span>
+                                        <span class="skill-years">20+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Comunicação Técnica</span>
+                                        <span class="skill-years">10+ anos</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Seção: Experiência -->
+                <section id="experiencia" class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Experiência Profissional</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="experience-accordion">
+
+                        <!-- Experiência 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">ABC Skill</h3>
+                                    <span class="job-title">CTO - Founder</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Mai 2024 - Atual</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Desenvolvimento da plataforma de avaliação On-line em APIs Restful em Python (Django e FastAPI)</li>
+                                    <li>Arquitetura e design escaláveis</li>
+                                    <li>Implementação de testes automatizados e CI/CD (PyTest)</li>
+                                    <li>Integração com serviços cloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Experiência 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">Desbravador Software</h3>
+                                    <span class="job-title">Desenvolvedor Backend</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Nov 2024 - Atual</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Desenvolvimento de sistemas desktop em Delphi para gestão Hoteleira</li>
+                                    <li>Criação de APIs e serviços web para integração entre sistemas</li>
+                                    <li>Refatoração de código legado e implementação de boas práticas</li>
+                                    <li>Participação em levantamento de requisitos com clientes</li>
+                                    <li>Utilização de arquitetura RESTFul nas aplicações/APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experiência 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">Linx</h3>
+                                    <span class="job-title">Desenvolvedor Backend</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Jan 2024 - Out 2024</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Desenvolvimento e manutenção em aplicações Backend em Delphi na área da saúde</li>
+                                    <li>Otimização de consultas e performance de banco de dados SQLServer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Experiência 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">Philips - Brasil</h3>
+                                    <span class="job-title">Desenvolvedor Backend</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Out 2021 - Dez 2023</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Desenvolvimento e manutenção em aplicações Backend Java e Delphi na área da saúde</li>
+                                    <li>Otimização de consultas e performance de banco de dados Oracle</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experiência 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">Desbravador Software</h3>
+                                    <span class="job-title">Desenvolvedor Backend</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Maio 2015 - Out 2021</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Desenvolvimento de sistemas desktop em Delphi para gestão Hoteleira</li>
+                                    <li>Criação de APIs e serviços web para integração entre sistemas</li>
+                                    <li>Refatoração de código legado e implementação de boas práticas</li>
+                                    <li>Participação em levantamento de requisitos com clientes</li>
+                                    <li>Utilização de arquitetura RESTFul nas aplicações/APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experiência 5 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="accordion-title-group">
+                                    <h3 class="company-name">Sysmo Sistemas</h3>
+                                    <span class="job-title">Desenvolvedor Backend</span>
+                                </div>
+                                <div class="accordion-meta">
+                                    <span class="period">Mar 2003 - Maio 2015</span>
+                                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <h4>Principais Responsabilidades:</h4>
+                                <ul class="responsibilities-list">
+                                    <li>Migração de sistemas legados para novas tecnologias</li>
+                                    <li>Desenvolvimento de funcionalidades em sistemas Delphi existentes</li>
+                                    <li>Criação e manutenção de procedures e triggers em Postgres e Firebird</li>
+                                    <li>Correção de bugs e melhorias de performance</li>
+                                    <li>Elaboração de documentação técnica</li>
+                                    <li>Participação em code reviews e aprendizado contínuo</li>
+                                    <li>Suporte aos usuários finais e treinamentos</li>
+                                    <li>Função de Scrum Master</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Seção: Formação -->
+                <section id="formacao" class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Formação</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="education-container">
+                        
+                        <!-- Formação Acadêmica -->
+                        <div class="education-category">
+                            <div class="category-title">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                <h3>Formação Acadêmica</h3>
+                            </div>
+                            
+                            <div class="education-list">
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Tecnólogo em Informática</h4>
+                                            <p class="education-institution">Universidade do Oeste de Santa Catarina - UNOESC</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">1999 - 2004</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Pós-Graduação em Engenharia e Qualidade de Software</h4>
+                                            <p class="education-institution">UNOCHAPECÓ</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2010 - 2012</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Inglês como segundo língua</h4>
+                                            <p class="education-institution">FISK</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2010 - 2015</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cursos Técnicos -->
+                        <div class="education-category">
+                            <div class="category-title">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                <h3>Cursos Técnicos</h3>
+                            </div>
+                            
+                            <div class="education-list">
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Técnico em Hardware e Manutenção de Computadores</h4>
+                                            <p class="education-institution">SENAC</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2002</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Delphi 3</h4>
+                                            <p class="education-institution">SENAC</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">1997</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cursos Online -->
+                        <div class="education-category">
+                            <div class="category-title">
+                                <svg class="category-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                                <h3>Cursos Online</h3>
+                            </div>
+                            
+                            <div class="education-list">
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Python/Django</h4>
+                                            <p class="education-institution">PyCodeBR</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2022</span>
+                                </div>
+                            
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">HTML/CSS/JavaScript Avançado</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2020</span>
+                                </div>
+                            
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">OOP</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2021</span>
+                                </div>
+                            
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Desenvolvimento Pessoal e Profissional</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2022</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Liderença e Gestão de Pessoas</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status completed">Concluído</span>
+                                    </div>
+                                    <span class="education-period">2024</span>
+                                </div>
+                            
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">I.A. Generativa para Aprendizagem e Desenvolvimento</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status in-progress">Em andamento</span>
+                                    </div>
+                                    <span class="education-period">2026</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">Agentes de IA com Python e OpenAI - Cria IA Reais da Prática</h4>
+                                            <p class="education-institution">Udemi</p>
+                                        </div>
+                                        <span class="education-status in-progress">Em andamento</span>
+                                    </div>
+                                    <span class="education-period">2026</span>
+                                </div>
+
+                                <div class="education-item">
+                                    <div class="education-header">
+                                        <div class="education-info">
+                                            <h4 class="education-title">SC Tech</h4>
+                                            <p class="education-institution">Governo do Estado de SC</p>
+                                        </div>
+                                        <span class="education-status in-progress">Em andamento</span>
+                                    </div>
+                                    <span class="education-period">2026</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Seção: Contato -->
+                <section id="contato" class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Entre em Contato</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="contact-container">
+                        
+                        <!-- Informações de Contato -->
+                        <div class="contact-info">
+                            <h3>Vamos conversar!</h3>
+                            <p class="contact-description">
+                                Estou sempre aberto a novas oportunidades, colaborações ou apenas 
+                                um bate-papo sobre tecnologia. Sinta-se à vontade para entrar em contato!
+                            </p>
+
+                            <div class="contact-cards">
+                                <!-- Email -->
+                                <a href="mailto:ednesio.colli@gmail.com" class="contact-card">
+                                    <div class="contact-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Email</span>
+                                        <span class="contact-value">ednesio.colli@gmail.com</span>
+                                    </div>
+                                </a>
+
+                                <!-- Localização -->
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Localização</span>
+                                        <span class="contact-value">São Miguel do Oeste, SC - Brasil</span>
+                                    </div>
+                                </div>
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/ednesio-colli/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                                    <div class="contact-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">LinkedIn</span>
+                                        <span class="contact-value">linkedin.com/in/ednesio-colli</span>
+                                    </div>
+                                </a>
+
+                                <!-- GitHub -->
+                                <a href="https://edecolli.github.io/edeColli/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                                    <div class="contact-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">GitHub</span>
+                                        <span class="contact-value">github.com/edecolli</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formulário de Contato -->
+                        <div class="contact-form-container">
+                            <h3>Envie uma mensagem</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" name="name" required placeholder="Seu nome">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Assunto da mensagem">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-button">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                    Enviar Mensagem
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Coluna Direita - Informações Adicionais -->
+            <aside class="sidebar-right">
+                
+                <!-- Card: Mini Bio -->
+                <div class="widget-card">
+                    <div class="widget-header">
+                        <svg class="widget-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <h3>Sobre</h3>
+                    </div>
+                    <div class="widget-content">
+                        <p class="bio-text">
+                            Sou Ednesio Colli, nascido em 1981 no Rio Grande do Sul, estabelecido em SC desde 1987, casasdo e pai de dois filhos maravilhosos (Vitor e Isabela), sou apaixonado por tecnologia e esportes.
+                            Nas minhas horas de lazer, gosto de apreciar um bom churrasco e assistir a jogos de futebol, especialmente os do meu time do coração. Minha paixão por tecnologia começou cedo, e desde então tenho 
+                            me dedicado a aprimorar minhas habilidades e conhecimentos na área de desenvolvimento de software.
+                        </p>
+                        <p class="bio-text">
+                            Adoro viajar e conhecer novos lugares e culturas, e se você tiver interesse em saber mais a meu respeito e sobre os projetos em que já trabalhei e/ou estou envolvido, fico feliz em compartilhar mais detalhes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card: Disponibilidade -->
+                <div class="widget-card status-card">
+                    <div class="status-indicator">
+                        <span class="status-dot available"></span>
+                        <span class="status-text">Disponível para projetos</span>
+                    </div>
+                    <p class="status-description">
+                        Aberto a novas oportunidades e colaborações interessantes.
+                    </p>
+                </div>
+
+                <!-- Card: Destaque Rápido -->
+                <div class="widget-card highlight-card">
+                    <div class="widget-header">
+                        <svg class="widget-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <h3>Destaques</h3>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="highlights-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>20+ anos de experiência na área de TI</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Especialista em Delphi e Python</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Arquitetura de sistemas</span>
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>APIs RESTful</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card: Download CV -->
+                <div class="widget-card cv-card">
+                    <button class="cv-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </button>
+                    <p class="cv-note">Currículo completo em PDF</p>
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © <span id="currentYear"></span> Ednesio Colli • Desenvolvido com ❤️❤️ e muito ☕ • Todos os direitos reservados
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
